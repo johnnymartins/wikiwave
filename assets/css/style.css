@@ -1,7 +1,10 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     font-size: 100%;
 }
 
@@ -14,6 +17,11 @@ h1 {
     font-style: bold;
 }
 
+h2 {
+    font-style: normal;
+    font-weight: 400;
+}
+
 a { 
     color:blue; 
     text-decoration: none;
@@ -22,19 +30,18 @@ a {
 p {
     margin-bottom: -5px;
 }
-
+/*
 header {
     max-width: 1440px;
     position: relative;
     margin: auto;
     padding-left: 1rem;
-}
+}*/
 
 header figure {
     max-width: 1440px;
-    position: relative;
-    margin-top: 10px;
-    margin-left: 0;
+    margin: 10px auto;
+    padding-left: 1rem;
 }
 
 header img {
@@ -45,7 +52,7 @@ figcaption {
     display: none;
 }
 
-.bar {
+#bar {
     background-color: #f9f9fb;
     padding: 15px;
     border-top: solid 1px #cdcdcd;
@@ -53,12 +60,12 @@ figcaption {
 }
 
 main {
-    max-width: 1440px;
+    max-width: 1424px;
     margin: auto;
     display: grid;
     gap: 0.5rem;
     grid-template-areas: "anchors main sidebar";
-    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    grid-template-columns: minmax(0, 15rem) minmax(0, 2.5fr) minmax(0, 15rem);
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -70,14 +77,13 @@ article {
 }
 
 section {
-    margin-bottom: 55px; /* rever novamente */
+    margin-bottom: 35px;
 }
 
 #primary_box {
     width: 255px;
-    height: 710px;
     border: 1px solid #22252d;
-    background-color: #f04848;
+    background-color: #e4e4e4;
     float: right;
     margin-left: 15px;
     position: relative;
@@ -137,7 +143,7 @@ section {
 #gen_fusão,
 #outros {
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     position: relative;
 }
 
@@ -173,10 +179,6 @@ section {
     float: left;
 }
 
-footer {
-    min-height: 100px;
-    border-top: solid 1px #cdcdcd;
-}
 
 #anchors h3 {
     position: sticky;
@@ -196,4 +198,11 @@ footer {
 #anchors ul li ul {
     margin-bottom: 5px;
     margin-left: 10px;
+}
+
+footer {
+    min-height: 100px;
+    border-top: solid 1px #cdcdcd;
+    text-align: center;
+    font-size: 0.8rem;
 }
